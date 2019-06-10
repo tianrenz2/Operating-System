@@ -13,3 +13,8 @@ The problem is about some people waiting in a line to use some fitting rooms, nu
 
 How it is implemented?
 Well, the method I used is that I create one thread to dynamically generate people waiting in the queue(this is required for this project), I also used another thread to keep checking the queue(which is a linkedlist), once the thread finds out a qualified person, it removes the person from the queue and start a new thread to execute the part for the person staying in the assigned fitting room.
+
+## 3. Multithreading Scheduling
+
+In this project, three scheduling methods for threads have been implemented, they are FCFS(First Come First Serve), EDF(Earliest Deadline First),  RM(rate-monotonic). 
+
